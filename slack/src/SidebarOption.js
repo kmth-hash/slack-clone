@@ -1,6 +1,6 @@
 import React from "react";
 import "./SidebarOption.css";
-import {  useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import db from "./FireConf";
 
 function SidebarOption({ Icon, title , id , addChannelOption }) {
@@ -10,11 +10,11 @@ function SidebarOption({ Icon, title , id , addChannelOption }) {
     console.log(addChannelOption);
     if(id) {
       console.log(id);
-      history.push(`/room/$(id)`);
+      history(`/room/${id}`);
     }
     else{
       console.log(id);
-      history.push('/title/');
+      history('/title/');
     }
   }
 
